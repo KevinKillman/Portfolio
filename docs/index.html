@@ -22,28 +22,93 @@
     </header>
     <main>
         <div class="container">
-            <div class="row gx-5">
-                <div class="col main-content ">
-                    <div class="card">
-
-                        <div class="card-body">
-                            <h3 class="card-title">Google Slides Presentation</h3>
-                            <embed><iframe
-                                    src="https://docs.google.com/presentation/d/e/2PACX-1vQ_e7BcEYXrHRkFZPMTk6XPb73IqB3d7vCUUR0uRwCN8cATzyVYvcXpRAo2jxe3u747vbkKnYcRjvca/embed?start=false&loop=false&delayms=5000"
-                                    frameborder="0"
-                                    width="960"
-                                    height="569"
-                                    allowfullscreen="true"
-                                    mozallowfullscreen="true"
-                                    webkitallowfullscreen="true"></iframe></embed>
-                        </div>
-                    </div>
+            <div class="row gx-5 align-items-stretch">
+                <div class="col-1">
+                    <button class="carousel-button"
+                            type="button"
+                            data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon side-button"
+                              aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
 
                 </div>
-                <div class="col side-content"
-                     id="side-toggle">Size 4</div>
+                <div class="col main-content ">
+                    <div id="carouselExampleControls"
+                         class="carousel carousel-dark slide"
+                         data-bs-ride="false"
+                         data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Financial Modeling and Web Dashboard</h3>
+                                        <p class="card-text">This project is composed of two aspects, a machine learning
+                                            component
+                                            and a Flask Web application. </p>
+                                        <p class="card-subtitle">The machine learning component attempted to scrape
+                                            Twitter's API and combine the data found with a Python sentiment analysis
+                                            library to
+                                            train a model on how perceived sentiment correlates with stock price
+                                            movement. The below
+                                            presentation goes into further detail of the project.</p>
+                                        <span class="iframe-embed"><embed><iframe class=""
+                                                    src="https://docs.google.com/presentation/d/e/2PACX-1vQ_e7BcEYXrHRkFZPMTk6XPb73IqB3d7vCUUR0uRwCN8cATzyVYvcXpRAo2jxe3u747vbkKnYcRjvca/embed?start=false&loop=false&delayms=5000"
+                                                    frameborder="0"
+                                                    width="960"
+                                                    height="569"
+                                                    allowfullscreen="true"
+                                                    mozallowfullscreen="true"
+                                                    webkitallowfullscreen="true"></iframe></embed></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Analysis of Michigan's Economy during the Pandemic</h3>
+                                        <p class="card-text">Using a combination of multiple datasources, aspects of the
+                                            Michigan
+                                            Economy are analyzed to determine the impact of the COVID pandemic.</p>
+                                        <a href="https://github.com/KevinKillman/Michigans_Economy_and_Covid/blob/locked/project_1_code.ipynb"
+                                           class="card-link"
+                                           target="_blank">Python Notebook used for data extraction and analysis.</a>
+                                        <span class="iframe-embed"><embed class=""><iframe class=""
+                                                    src="https://docs.google.com/presentation/d/e/2PACX-1vRgJNY8CIgX5lBYLqo6D-ZUgsecaigCNuAjK3Dddl0DmjWkosLqdpltDogNkyDwy76cknt6-2XhzVgW/embed?start=false&loop=false&delayms=10000"
+                                                    frameborder="0"
+                                                    allowfullscreen="true"
+                                                    width="960"
+                                                    height="569"
+                                                    mozallowfullscreen="true"
+                                                    webkitallowfullscreen="true"></iframe></embed></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="col-1"><button class="carousel-button"
+                            type="button"
+                            data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon side-button"
+                              aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button></div>
             </div>
-        </div>
+            <div class="row gx-5">
+                <div class="col">
+
+                </div>
+            </div>
     </main>
     <footer>
         <nav></nav>

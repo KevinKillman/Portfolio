@@ -1,8 +1,21 @@
-.main-content {
-    border: solid green;
-
+.iframe-embed {
+    display: block;
+    text-align: center;
 }
 
-.side-content {
-    border: solid red;
+.cb {
+    height: 100%;
+}
+
+.side-button {
+    height: 100%;
+}
+
+.carousel-button {
+    border: none;
+    height: 100%;
+}
+
+.carousel-button:hover {
+    border: solid 2px;
 }
