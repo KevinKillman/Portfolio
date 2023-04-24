@@ -18,8 +18,29 @@
 
 <body>
     <header>
-        <nav></nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand"
+                   href="#">Kevin Killman Portfolio</a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                     id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
+    <br>
     <main>
         <div class="container">
             <div class="row gx-5 align-items-stretch">
@@ -34,7 +55,7 @@
                     </button>
 
                 </div>
-                <div class="col main-content ">
+                <div class="col-10 main-content ">
                     <div id="carouselExampleControls"
                          class="carousel carousel-dark slide"
                          data-bs-ride="false"
@@ -53,7 +74,7 @@
                                             train a model on how perceived sentiment correlates with stock price
                                             movement. The below
                                             presentation goes into further detail of the project.</p>
-                                        <span class="iframe-embed"><embed><iframe class=""
+                                        <span class="iframe-embed"><embed><iframe class="iframeBC"
                                                     src="https://docs.google.com/presentation/d/e/2PACX-1vQ_e7BcEYXrHRkFZPMTk6XPb73IqB3d7vCUUR0uRwCN8cATzyVYvcXpRAo2jxe3u747vbkKnYcRjvca/embed?start=false&loop=false&delayms=5000"
                                                     frameborder="0"
                                                     width="960"
@@ -61,7 +82,17 @@
                                                     allowfullscreen="true"
                                                     mozallowfullscreen="true"
                                                     webkitallowfullscreen="true"></iframe></embed></span>
-
+                                        <p class="card-subtitle">The below presentation details the initial design and
+                                            implementation of the web dashboard that the financial modeling portion is
+                                            based off of. It also features a video walking through the web features.</p>
+                                        <span class="iframe-embed"><embed><iframe class="iframeBC"
+                                                    src="https://docs.google.com/presentation/d/e/2PACX-1vSc7EgyqSwGxjFIDN-5Bl2KBrUWU8pyuBMExes11YrzyayUQ7D7s7onCt6pF8ow9rGZq5Aa0T33rm2c/embed?start=false&loop=false&delayms=3000"
+                                                    frameborder="0"
+                                                    width="960"
+                                                    height="569"
+                                                    allowfullscreen="true"
+                                                    mozallowfullscreen="true"
+                                                    webkitallowfullscreen="true"></iframe></embed></span>
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +106,8 @@
                                         <a href="https://github.com/KevinKillman/Michigans_Economy_and_Covid/blob/locked/project_1_code.ipynb"
                                            class="card-link"
                                            target="_blank">Python Notebook used for data extraction and analysis.</a>
-                                        <span class="iframe-embed"><embed class=""><iframe class=""
+                                        <span class="iframe-embed"><embed class=""><iframe onload="loadIframe()"
+                                                    class="iframeBC"
                                                     src="https://docs.google.com/presentation/d/e/2PACX-1vRgJNY8CIgX5lBYLqo6D-ZUgsecaigCNuAjK3Dddl0DmjWkosLqdpltDogNkyDwy76cknt6-2XhzVgW/embed?start=false&loop=false&delayms=10000"
                                                     frameborder="0"
                                                     allowfullscreen="true"
@@ -117,15 +149,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
     <script>
-        function DoWork() {
-            let side = document.getElementById("side-toggle")
-            if (side.checkVisibility()) {
-                side.hidden = true
-            } else {
-                side.hidden = false
-            }
-        }
+        function loadIframe() { }
+
+
+
+
     </script>
 </body>
 

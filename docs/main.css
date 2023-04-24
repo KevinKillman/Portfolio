@@ -1,6 +1,7 @@
 .iframe-embed {
     display: block;
     text-align: center;
+    margin: 1rem;
 }
 
 .cb {
@@ -18,4 +19,8 @@
 
 .carousel-button:hover {
     border: solid 2px;
+}
+
+.iframeBC {
+    width: 100%;
 }
